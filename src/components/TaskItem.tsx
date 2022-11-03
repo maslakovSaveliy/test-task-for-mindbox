@@ -27,9 +27,9 @@ const TaskItem: FC<TaskProps> = ({ index, task }) => {
         checked={task.completed}
         onChange={() => toggleTodo(task.id)}
       />
-      <div style={task.completed ? { textDecoration: "line-through" } : {}}>
-        {index}. {task.title}
-      </div>
+      <span style={task.completed ? { textDecoration: "line-through" } : {}}>
+        <strong>{index}.</strong> {task.title}
+      </span>
       <button onClick={() => deleteTodo(task.id)}>✖</button>
     </div>
   );

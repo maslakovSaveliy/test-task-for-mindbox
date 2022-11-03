@@ -45,6 +45,10 @@ const Tasks: FC<TasksProps> = () => {
   }, [filterValue]);
   return (
     <div className="tasks__list">
+      <div style={{ marginBottom: "15px" }}>
+        {[...initialState].filter((todo) => todo.completed == false).length}{" "}
+        items left
+      </div>
       {tasks.length > 0 ? (
         <div>
           <div>
@@ -56,10 +60,6 @@ const Tasks: FC<TasksProps> = () => {
       ) : (
         <div>no todos</div>
       )}
-      <div style={{ marginBottom: "15px" }}>
-        {[...initialState].filter((todo) => todo.completed == false).length}{" "}
-        items left
-      </div>
       <Filters value={filterValue} setValue={setFilterValue} />
       <button onClick={clearCompleted}>Clear completed</button>
     </div>

@@ -5,6 +5,20 @@
   align-items: center;
   justify-content: center;
 }
+input {
+  font-family: Arial;
+  font-size: 19px;
+  letter-spacing: 0px;
+  word-spacing: 0px;
+  color: #000000;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  border: 1px solid black;
+  border-radius: 5px;
+}
 .App h1 {
   font-family: Arial;
   font-size: 36px;
@@ -22,9 +36,19 @@
   padding: 30px;
   border-radius: 20px;
   box-shadow: 0px 4px 26px -7px rgba(0, 0, 0, 0.12);
+  font-family: Arial;
+  font-size: 23px;
+  letter-spacing: 0px;
+  word-spacing: 0px;
+  color: #000000;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
 }
 .tasks__list {
-  margin-top: 30px;
+  margin-top: 15px;
 }
 .filters {
   display: flex;
@@ -47,9 +71,19 @@
 button {
   background: none;
   border: none;
+  font-family: Arial;
+  font-size: 19px;
+  letter-spacing: 0px;
+  word-spacing: 0px;
+  color: #000000;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
 }
 .task__item button {
-  background-color: rgb(189, 189, 189);
+  border: 1px solid rgb(189, 189, 189);
   border-radius: 50%;
   display: flex;
   margin-left: auto;

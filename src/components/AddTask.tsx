@@ -7,6 +7,7 @@ const AddTask = () => {
     <div>
       <input
         type="text"
+        placeholder="Type title..."
         value={input}
         onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
           setInput(e.target.value)
